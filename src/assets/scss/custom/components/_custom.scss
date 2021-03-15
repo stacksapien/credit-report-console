@@ -1,0 +1,134 @@
+.signature {
+    border:  1px solid #e2e7f1;
+}
+
+.terms-and-condition {
+    max-height: 200px;
+    background: #F3F4F7;
+    overflow: auto;
+}
+
+.loan-view-header-card{
+    text-align: center;
+}
+
+.loan-view-horizontal-separator {
+    border-right: 2px solid #F3F4F7;
+}
+
+.viewer-layout-container{
+    border: none !important;
+    border-radius: 0.3rem;
+}
+ .viewer-layout-toolbar {
+    background: #F3F4F7 !important;
+    color: #676774;
+  }
+  
+  .viewer-icon{
+    stroke: #676774;
+    stroke-width: 3px;
+  }
+  
+  .viewer-zoom-popover-target-arrow {
+    border-color: gray;
+  }
+  
+  .viewer-menu-item-label, .viewer-search-popover-label,  .viewer-menu,  .viewer-menu .viewer-icon{
+    color: #676774;
+    stroke: #676774;
+  }
+
+  .center-container {
+    margin-left: 0;
+}
+
+.toast-text {
+    color: #003D79 !important;
+    margin-left: 3%;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+@media (min-width: 576px) {
+  .dialog {
+      max-width: 1000px;
+  }
+}
+
+.removeFile {
+  position: absolute;
+  right: 12px;
+  top: 18px;
+  width: 12px;
+  height: 12px;
+  opacity: 0.3;
+}
+.removeFile:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.removeFile:before, .removeFile:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 23px;
+  width: 2px;
+  background-color: #333;
+}
+.removeFile:before {
+  transform: rotate(45deg);
+}
+.removeFile:after {
+  transform: rotate(-45deg);
+}
+
+.button-right{
+  justify-content: flex-end;
+  margin: auto;
+}
+
+.sign-canvas {
+  width: 100%;
+  height: 300px;
+  background-color: #f1f1f1;
+}
+
+#sidebar-menu > ul > li > a {
+  color: #FAB718;
+}
+
+#sidebar-menu > ul > li > a svg {
+
+  color: #FAB718;
+}
+
+
+.user-profile .pro-user-name {
+  color: white;
+}
+
+.user-profile .pro-user-desc {
+ color : white;
+}
+
+.user-profile .dropdown-toggle svg {
+
+  color: #FAB718;
+  background-color: rgba(250,183,24, 0.1);
+}
+
+.navbar-custom .topnav-menu .nav-link svg {
+
+  color: #FAB718;
+
+}
+
+
+.nav-second-level li a, .nav-thrid-level li a {
+ 
+  color: #ffc107;
+ 
+}
