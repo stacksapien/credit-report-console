@@ -127,7 +127,7 @@ class Topbar extends Component {
                 </button>
               </li> */}
 
-              {/* <ProfileDropdown profilePic={profilePic} menuItems={ProfileMenus} username={'Test'} description="Administrator" /> */}
+               <ProfileDropdown profilePic={profilePic} menuItems={ProfileMenus} username={'Test'} description="Administrator" /> 
             </ul>
 
           </Container>

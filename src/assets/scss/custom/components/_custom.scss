@@ -122,7 +122,7 @@
 
 .navbar-custom .topnav-menu .nav-link svg {
 
-  color: #FAB718;
+  color: white;
 
 }
 
@@ -131,4 +131,25 @@
  
   color: #ffc107;
  
+}
+
+.topbar-nav .metismenu li a svg {
+ 
+  color: white;
+ 
+}
+
+
+.topbar-nav .metismenu li a {
+  color: white;
+}
+
+.topbar-nav .metismenu li .nav-second-level a:hover, .topbar-nav .metismenu li .nav-second-level a:focus {
+    color: black;
+    text-decoration: none;
+    background-color: #ffc107;
+}
+
+.user-profile .pro-user-desc {
+  color: white !important;
 }

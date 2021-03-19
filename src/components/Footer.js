@@ -7,13 +7,13 @@ import { CENTER_LAYOUT_PAGE_URLS } from "../constants/layout";
 class Footer extends Component {
 
     render() {
-        const footerCss = CENTER_LAYOUT_PAGE_URLS.includes(this.props.match.url) ? "footer left-footer" : "footer";
+        // const footerCss = CENTER_LAYOUT_PAGE_URLS.includes(this.props.match.url) ? "footer left-footer" : "footer";
         return (
-            <footer className={footerCss}>
+            <footer className={'footer'}>
                 <div className="container-fluid">
                     <div className="row">
                         <div className="col-12">
-                            2020 &copy; Micro-Lending. All Rights Reserved. 
+                            2020 &copy; Credit Repair. All Rights Reserved. 
                         </div>
                     </div>
                 </div>

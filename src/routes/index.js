@@ -74,6 +74,10 @@ const AdvancedTables = React.lazy(() => import('../pages/tables/Advanced'));
 
 const FormApplication = React.lazy(() => import('../pages/dashboard/ApplicationForm'));
 
+
+
+const Home = React.lazy(() => import('../pages/dashboard/Home'));
+
 // handle auth and authorization
 const PrivateRoute = ({ component: Component, roles, ...rest }) => (
     <Route
@@ -124,6 +128,15 @@ const dashboardRoutes = {
     path: '/user/dashboard',
     name: 'Home',
     icon: FeatherIcon.Home,
+    component: Home,
+    roles: ['user'],
+    route: PrivateRoute,
+};
+
+const fundingRoutes = {
+    path: '/funding',
+    name: 'Funding',
+    icon: FeatherIcon.Star,
     component: FormApplication,
     roles: ['user'],
     route: PrivateRoute,
@@ -689,6 +702,7 @@ const allRoutes = [
     rootRoute,
     dashboardRoutes,
     dashboardUserLoanRequest,
+    fundingRoutes,
     // connectQuickbook,
     // dashboardLoanRoutes,
     dashboardAgentRoutes,
@@ -719,6 +733,7 @@ const allRoutes = [
 const authProtectedRoutes = [
     dashboardRoutes,
     dashboardUserLoanRequest,
+    fundingRoutes,
     // connectQuickbook,
     // profile,
     // dashboardLoanRoutes,
