@@ -262,10 +262,10 @@ class Dashboard extends Component {
                                                     </Col>
                                                     <Col md={7}>
                                                        
-                                                            <Button color={`soft-primary`} className="mr-1 badge-lg">Active Client : 0</Button>
+                                                       {/*     <Button color={`soft-primary`} className="mr-1 badge-lg">Active Client : 0</Button>
                                                             <Button color={`soft-secondary`} className="mr-1 mt-2 badge-lg">No Portal : 0</Button>
                                                             <Button color={`soft-success`} className="mr-1 mt-2 badge-lg">Current Leads : 0</Button>
-                                                           
+                                                          */} 
                                                     </Col>
                                                 </Row>
                                                 
