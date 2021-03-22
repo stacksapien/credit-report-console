@@ -288,9 +288,9 @@ body[data-layout="topnav"] {
 
 @include media-breakpoint-up(lg) {
     body[data-layout="topnav"] {
-        .container-fluid {
-            max-width: 85%;
-        }
+        // .container-fluid {
+        //     max-width: 85%;
+        // }
 
         .navbar-custom {
             .logo{

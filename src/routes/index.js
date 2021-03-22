@@ -235,6 +235,108 @@ const dashboardUserLoanRequest = {
     ],
 };
 
+const disputeManagerRoute = {
+    path: '/user/dispute-manage',
+    name: 'Dispute Manager',
+    icon: FeatherIcon.Play,
+    children: [
+        {
+            path: '/user/dispute-manager',
+            name: 'Dispute Manager',
+            component: FormApplication,
+            route: PrivateRoute,
+            roles: ['user'],
+        },
+        {
+            path: '/user/address-furnisher',
+            name: 'Furnisher Addresses',
+            component: FormApplication,
+            route: PrivateRoute,
+            roles: ['user'],
+        }
+    ],
+};
+
+const billingRoutes = {
+    path: '/user/billing',
+    name: 'Billing',
+    icon: FeatherIcon.DollarSign,
+    children: [
+        {
+            path: '/user/billing/invoicing-checks',
+            name: 'Invoicing/Checks',
+            component: FormApplication,
+            route: PrivateRoute,
+            roles: ['user'],
+        },
+        {
+            path: '/user/billing/credit-card-setup',
+            name: 'Credit Card Setup',
+            component: FormApplication,
+            route: PrivateRoute,
+            roles: ['user'],
+        },
+        {
+            path: '/user/billing/services-products',
+            name: 'Services/Products',
+            component: FormApplication,
+            route: PrivateRoute,
+            roles: ['user'],
+        },
+        {
+            path: '/user/billing/payments',
+            name: 'Payments',
+            component: FormApplication,
+            route: PrivateRoute,
+            roles: ['user'],
+        },
+        {
+            path: '/user/billing/payment-history',
+            name: 'Payment History',
+            component: FormApplication,
+            route: PrivateRoute,
+            roles: ['user'],
+        },
+        {
+            path: '/user/billing/pay-per-deletion',
+            name: 'Pay Per Deletion',
+            component: FormApplication,
+            route: PrivateRoute,
+            roles: ['user'],
+        },
+    ],
+};
+
+
+const affiliatesRoutes = {
+    path: '/user/affiliates',
+    name: 'Affiliates',
+    icon: FeatherIcon.User,
+    children: [
+        {
+            path: '/user/affiliates',
+            name: 'Affiliates',
+            component: FormApplication,
+            route: PrivateRoute,
+            roles: ['user'],
+        },
+        {
+            path: '/user/leads',
+            name: 'Leads',
+            component: FormApplication,
+            route: PrivateRoute,
+            roles: ['user'],
+        },
+        {
+            path: '/user/website-lead-form',
+            name: 'Website Lead Form',
+            component: FormApplication,
+            route: PrivateRoute,
+            roles: ['user'],
+        }      
+    ],
+};
+
 
 const applicationFormRequest = {
 
@@ -518,6 +620,53 @@ const dashboardAgentLoanRequests = {
     roles: ['agent', 'sub-agent'],
 };
 
+const customerRoutes = {
+    path: '/customers',
+    name: 'Customers',
+    icon: FeatherIcon.Users,
+    component: FormApplication,
+    route: PrivateRoute,
+    roles: ['user'],
+};
+
+const importAnalysisRoute = {
+    path: '/import-analysis',
+    name: 'Import/Analysis',
+    icon: FeatherIcon.Upload,
+    component: FormApplication,
+    route: PrivateRoute,
+    roles: ['user'],
+};
+
+const letterVaultRoutes = {
+    path: '/letter-vault',
+    name: 'Letter Vault',
+    icon: FeatherIcon.MessageSquare,
+    component: FormApplication,
+    route: PrivateRoute,
+    roles: ['user'],
+};
+
+
+const calendarRoute = {
+    path: '/calendar',
+    name: 'Calendar',
+    icon: FeatherIcon.Calendar,
+    component: FormApplication,
+    route: PrivateRoute,
+    roles: ['user'],
+};
+
+
+const printRoutes = {
+    path: '/bulk-printing',
+    name: 'Bulk Print',
+    icon: FeatherIcon.Printer,
+    component: FormApplication,
+    route: PrivateRoute,
+    roles: ['user'],
+};
+
 // components
 const componentsRoutes = {
     path: '/ui',
@@ -702,6 +851,14 @@ const allRoutes = [
     rootRoute,
     dashboardRoutes,
     dashboardUserLoanRequest,
+    customerRoutes,
+    importAnalysisRoute,
+    disputeManagerRoute,
+    letterVaultRoutes,
+    printRoutes,
+    billingRoutes,
+    affiliatesRoutes,
+    calendarRoute,
     fundingRoutes,
     // connectQuickbook,
     // dashboardLoanRoutes,
@@ -733,6 +890,14 @@ const allRoutes = [
 const authProtectedRoutes = [
     dashboardRoutes,
     dashboardUserLoanRequest,
+    customerRoutes,
+    importAnalysisRoute,
+    disputeManagerRoute,
+    letterVaultRoutes,
+    printRoutes,
+    billingRoutes,
+    affiliatesRoutes,
+    calendarRoute,
     fundingRoutes,
     // connectQuickbook,
     // profile,
